@@ -1,7 +1,7 @@
 import socket
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host = socket.gethostname()  # Get local machine name
+host = socket.gethostname()  # Get local machine name/IP address
 port = 444  # Reserve a port for your service.
 
 serversocket.bind((host, port))  # Bind to the port
